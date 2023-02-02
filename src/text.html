@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>皮卡丘</title>
+</head>
+<body>
+<style id="css"></style>
+<div id="text"></div>
+<div id="buttons">
+    <button id="btnPause">暂停</button>
+    <button id="btnPlay">播放</button>
+    <button id="btnSlow">慢速</button>
+    <button id="btnNormal">匀速</button>
+    <button id="btnFast">快速</button>
+</div>
+<style>
+    *{box-sizing: border-box}
+    *::before,*::after{box-sizing: border-box}
+    #buttons{
+
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+    #buttons>button{
+        margin-bottom: 10px;
+        padding: 4px;
+    }
+    #css{
+        display: none;
+    }
+    #text{
+
+        position: fixed;
+        height: 100%;
+        right: 0;
+        width: 50%;
+        overflow-y: auto;
+    }
+    #text::-webkit-scrollbar{
+        display: none;
+    }
+    #html{
+
+        position: fixed;
+        bottom: 0px;
+        height: 100%;
+        width: 50%;
+        left: 0;
+    }
+
+</style>
+<div id="html">
+    <body>
+    <div class="skin">
+        <div class="yan left"></div>
+        <div class="yan right"></div>
+        <div class="nose">
+
+        </div>
+        <div class="lian left"></div>
+        <div class="lian right"></div>
+        <div class="zui">
+            <div class="shangzui">
+                <div class="shangzui left"></div>
+                <div class="shangzui right"></div>
+            </div>
+            <div class="xiazui">
+                <div class="yuan1">
+                    <div class="yuan2">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="heart">
+            <div class="bottom"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+        </div>
+        <div class="shou right">
+            <img src="img/hand.9ae3593e.png" alt="">
+        </div>
+        <div class="shou left">
+            <img src="img/hand.9ae3593e.png" alt="">
+        </div>
+    </div>
+</div>
+<script src="text.js"></script>
+</body>
+</html>
